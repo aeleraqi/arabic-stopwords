@@ -12,6 +12,17 @@ The stopwords list is available in multiple formats:
 ## Usage
 You can easily integrate this stopwords list into your NLP projects. Here are examples of how to use the stopwords list in different programming languages:
 
+``` R
+# Load stopwords from an Excel file
+library(readxl)
+stopwords <- read_excel("stopwords.xlsx")
+
+# Example of filtering stopwords from a sample text
+sample_text <- "هذا نص تجريبي يحتوي على بعض الكلمات الشائعة."
+filtered_text <- unlist(strsplit(sample_text, " "))[!unlist(strsplit(sample_text, " ")) %in% stopwords$word]
+
+cat(filtered_text)
+--------------------------------------------------------------------------------------------
 ### Python
 ```python
 # Load stopwords from a text file
