@@ -22,15 +22,4 @@ sample_text <- "هذا نص تجريبي يحتوي على بعض الكلمات
 filtered_text <- unlist(strsplit(sample_text, " "))[!unlist(strsplit(sample_text, " ")) %in% stopwords$word]
 
 cat(filtered_text)
---------------------------------------------------------------------------------------------
-### Python
-```python
-# Load stopwords from a text file
-with open('stopwords.txt', 'r', encoding='utf-8') as f:
-    stopwords = f.read().splitlines()
 
-# Example of filtering stopwords from a sample text
-sample_text = "هذا نص تجريبي يحتوي على بعض الكلمات الشائعة."
-filtered_text = ' '.join([word for word in sample_text.split() if word not in stopwords])
-
-print(filtered_text)
