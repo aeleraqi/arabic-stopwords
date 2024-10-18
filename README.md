@@ -1,4 +1,4 @@
-# Arabic Stopwords
+# Arabic Stopwords ![Arabic](https://img.icons8.com/ios-filled/50/000000/arabic.png) ![NLP](https://img.icons8.com/ios-filled/50/000000/natural-language-processing.png)
 
 ## Introduction
 This repository contains a comprehensive list of Arabic stopwords. Stopwords are common words in a language that are often filtered out during text processing and analysis, as they do not contribute significant meaning to the text. Removing stopwords is an essential step in various natural language processing (NLP) tasks such as text classification, sentiment analysis, and information retrieval.
@@ -7,7 +7,7 @@ This repository contains a comprehensive list of Arabic stopwords. Stopwords are
 The stopwords list is available in multiple formats:
 - `stopwords.txt`: Plain text format
 - `stopwords.csv`: Comma-separated values format
-- `stopwords.json`: JSON format
+- `stopwords.xlsx`: Excel format
 
 ## Usage
 You can easily integrate this stopwords list into your NLP projects. Here are examples of how to use the stopwords list in different programming languages:
