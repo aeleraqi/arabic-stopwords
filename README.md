@@ -9,17 +9,24 @@ The stopwords list is available in multiple formats:
 - `arabic-stopwords.csv`: Comma-separated values format
 - `arabic-stopwords.xlsx`: Excel format
 
+
+## Contribution
+Contributions are welcome! If you have suggestions for additional stopwords or improvements, please open an issue or submit a pull request.
+
 ## Usage
 You can easily integrate this stopwords list into your NLP projects. Here are examples of how to use the stopwords list in different programming languages:
 
-``` R
-# Load stopwords from an Excel file
-library(readxl)
-stopwords <- read_excel("stopwords.xlsx")
+### Python
+```python
+# Load stopwords from a text file
+with open('stopwords.txt', 'r', encoding='utf-8') as f:
+    stopwords = f.read().splitlines()
 
 # Example of filtering stopwords from a sample text
-sample_text <- "هذا نص تجريبي يحتوي على بعض الكلمات الشائعة."
-filtered_text <- unlist(strsplit(sample_text, " "))[!unlist(strsplit(sample_text, " ")) %in% stopwords$word]
+sample_text = "هذا نص تجريبي يحتوي على بعض الكلمات الشائعة."
+filtered_text = ' '.join([word for word in sample_text.split() if word not in stopwords])
 
-cat(filtered_text)
+print(filtered_text)
+
+
 
